@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Corner Border-Radius Animation</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f3f4f6; /* light gray */
+      margin: 0;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background: #10b981; /* emerald green */
+      animation: fullRadiusAnim 4s infinite alternate ease-in-out;
+    }
+
+    @keyframes fullRadiusAnim {
+      
+      0% {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 10px;
+      }
+      50% {
+        border-top-left-radius: 100px;
+        border-top-right-radius: 60px;
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 50px;
+      }
+      75% {
+        border-top-left-radius: 60px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 80px;
+      }
+      100% {
+        border-top-left-radius: 120px;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
